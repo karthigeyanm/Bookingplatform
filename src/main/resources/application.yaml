@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/booking
+    hikari:
+      maximum-pool-size: 3
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL10Dialect    
+    show-sql: true  
+    hibernate:
+      ddl-auto: create
+     
+      
